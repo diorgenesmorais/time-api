@@ -4,6 +4,8 @@
   "description": "API baseada no curso de Waldemar Neto",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +24,11 @@
   },
   "homepage": "https://github.com/diorgenesmorais/time-api#readme",
   "devDependencies": {
+    "@types/module-alias": "^2.0.0",
     "@types/node": "^14.11.1",
     "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
   }
 }
